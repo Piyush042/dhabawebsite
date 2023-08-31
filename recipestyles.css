@@ -1,0 +1,188 @@
+#navitems{
+    list-style: none;
+    display: flex;
+    overflow: auto;
+    margin-top: 3px;
+    margin-bottom: 6px;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between ;
+    box-sizing: border-box; 
+    flex-wrap:nowrap;
+
+    
+    
+    
+}
+
+.logotext{
+    display: flex;
+}
+
+.container{
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    
+    width: 100%;
+    overflow: auto;
+   
+}
+
+
+
+*{
+    margin:0;
+    padding: 0;
+}
+
+a{
+    text-decoration:none;
+    margin: 3px;
+    padding:2px;
+}
+#heading{
+    font-size: 2em;
+    margin-left: 4px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+
+#navlinks{
+    font-size: 1em;
+    margin-right: 15px;
+}
+body{
+    background-color: #FFDEE9;
+    background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
+    
+}
+.footer{
+    display: flex;
+    width: 100%;
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    
+    justify-content:center;
+    align-items: center;
+    
+}
+
+.copyright{
+    font-size: 0.8em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+    color: #000000;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.item{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    
+}
+
+.about{
+    width: 80vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+     /* overflow: scroll; */
+} 
+
+h1{
+    margin-left: 15px;
+}
+h2{
+    font-family: 'Barriecito', cursive;
+}
+ol{
+    margin-top:8px;
+    
+}
+
+#ing1{
+    margin-top: 8px;
+}
+#recipie1{
+    margin-top: 8px;
+}
+.content{
+    margin: 15px;
+}
+.rightbox{ 
+    position: relative;
+    margin: 15px;
+    margin-bottom: 15px;
+    padding: 10px;
+    height: 200px;
+    width:300px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+#itmimg{
+      height: 100%;
+      width: 100%;
+      border-radius: 20px;
+      box-shadow: 3px 3px red, -1em 0 .4em rgb(89, 88, 80);
+      
+    
+}
+
+#logo{
+    height: 50px;
+    width: 50px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    border: 2px solid #000000;
+    transition: all 0.3s linear 0s;
+    justify-content: center;
+
+}
+
+#logo:hover{
+         background-color: rgb(64, 82, 99);
+         
+}
+.rightbox:hover{
+    
+    transform: scale(1.02);
+}
+.rightbox .overlay{
+    position:absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #a596964f;
+    opacity: 0;
+}
+.rightbox .overlay span{
+    font-size: 1.5em;
+    color: #fffffff9;
+    font-family:'Times New Roman', Times, serif;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s linear 0s;
+    
+}
+
+.rightbox:hover .overlay{
+    opacity: 1;
+}
+.rightbox:hover .overlay span{
+    transform: translateY(4px);
+}
